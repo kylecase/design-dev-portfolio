@@ -8,7 +8,7 @@ const DevPortfolio = (props) => (
         <nav>
           <a href='/'>Home</a>
           <a href='/designer'>Designer</a>
-          <a href='/developer'} className="selected">Developer</a>
+          <a href='/developer' className="selected">Developer</a>
         </nav>
       </div>
     </div>
