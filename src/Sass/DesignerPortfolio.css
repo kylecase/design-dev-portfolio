@@ -1,0 +1,15 @@
+.design-portfolio .jumbotron {
+  background-color: #57D19C;
+  min-height: 60vh;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.design-portfolio header {
+  font-family: "Bungee", cursive;
+  color: white; }
+
+.design-portfolio .design-projects {
+  background-color: #F8FAFC; }

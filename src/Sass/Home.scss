@@ -1,0 +1,420 @@
+@import './Variables.scss';
+
+.home {
+  h1 {
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 3em;
+    color: $main-blue;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (max-width: $break-md){
+      padding-top: 20px;
+      padding-bottom: 12px;
+      font-size: 2em;
+    }
+  }
+  .home-element {
+    background-color: white;
+    padding: 24px;
+    border-radius: 6px;
+    font-family: $title-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darken($bg-gray, 12%);
+    a {
+      color: white;
+      font-size: 2em;
+    }
+
+    &:hover {
+      h2 {
+        color: white;
+      }
+      a {
+        color: white;
+      }
+    }
+    @media screen and (max-width: $break-sm) {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    h2 {
+      color: $main-text;
+      @media screen and (max-width: $break-md){
+        padding-top: 10%;
+      }
+    }
+  }
+  .designer-home {
+    transition: background-color 0.3s ease-out, border-color 0.3s ease-in;
+
+    &:hover {
+      background-color: $main-green;
+      border-color: darken($main-green, 20%);
+      transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+    }
+    @media screen and (max-width: $break-md) {
+      background-color: $main-green;
+      h2 {
+        color: white;
+      }
+    }
+    // .phone {
+    //   position: absolute;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   top: 50%;
+    //   width: 60%;
+    //   height: 60%;
+    //   border-radius: 8px;
+    //   background-color: white;
+    //   left: 20%;
+    //   right: 20%;
+    //   border: 2px solid darken($bg-gray, 10%);
+    //   .phone-digits {
+    //     padding-top: 40%;
+    //     padding-bottom: 20%;
+    //     width: 75%;
+    //     .digit-row {
+    //       display: flex;
+    //       flex-direction: row;
+    //       margin-bottom: 14px;
+    //       justify-content: space-evenly;
+    //       .digit {
+    //         font-family: $main-font;
+    //         border: 2px solid darken($bg-gray, 10%);
+    //         border-radius: 50%;
+    //         padding: 2px 10px;
+    //       }
+    //
+    //     }
+    //   }
+    // }
+  }
+  .developer-home {
+    transition: background-color 0.3s ease-out, border-color 0.3s ease-in;
+
+    &:hover {
+      background-color: $bg-dark;
+      border-color: darken($bg-dark, 20%);
+      transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+    }
+    @media screen and (max-width: $break-md) {
+      background-color: $bg-dark;
+      h2 {
+        color: white;
+      }
+    }
+  }
+  .designer-home, .developer-home {
+    min-height: 400px;
+    @media screen and (max-width: $break-sm){
+      min-height: 200px;
+    }
+  }
+}
+
+.viking {
+  background-color: $viking-blue;
+
+  p {
+    color: darken($viking-blue, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($viking-blue, 20%);
+    color: darken($viking-blue, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($viking-blue, 30%);
+    }
+  }
+}
+
+.selective-yellow {
+  background-color: $selective-yellow;
+
+  p {
+    color: darken($selective-yellow, 30%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($selective-yellow, 20%);
+    color: darken($selective-yellow, 20%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($selective-yellow, 30%);
+    }
+  }
+}
+
+.mulberry {
+  background-color: $mulberry;
+
+  p {
+    color: lighten($mulberry, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($mulberry, 20%);
+    color: darken($mulberry, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($mulberry, 30%);
+    }
+  }
+}
+
+.butterfly-brush{
+  background-color: $butterfly-brush;
+
+  p {
+    color: lighten($butterfly-brush, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($butterfly-brush, 20%);
+    color: darken($butterfly-brush, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($butterfly-brush, 30%);
+    }
+  }
+}
+.mantis {
+  background-color: $mantis;
+
+  p {
+    color: darken($mantis, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($mantis, 20%);
+    color: darken($mantis, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($mantis, 30%);
+    }
+  }
+}
+.celestial-blue {
+  background-color: $celestial-blue;
+
+  p {
+    color: lighten($celestial-blue, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($celestial-blue, 20%);
+    color: darken($celestial-blue, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($celestial-blue, 30%);
+    }
+  }
+}
+
+.pacific-blue {
+  background-color: $pacific-blue;
+
+  p {
+    color: lighten($pacific-blue, 50%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($pacific-blue, 20%);
+    color: darken($pacific-blue, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($pacific-blue, 30%);
+    }
+  }
+}
+.sun {
+  background-color: $sun;
+
+  p {
+    color: lighten($sun, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($sun, 20%);
+    color: darken($sun, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($sun, 30%);
+    }
+  }
+}
+
+.half-baked-blue {
+  background-color: $half-baked-blue;
+
+  p {
+    color: darken($half-baked-blue, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($half-baked-blue, 20%);
+    color: darken($half-baked-blue, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($half-baked-blue, 30%);
+    }
+  }
+}
+
+.deluge {
+  background-color: $deluge;
+
+  p {
+    color: lighten($deluge, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($deluge, 20%);
+    color: darken($deluge, 30%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($deluge, 30%);
+    }
+  }
+}
+
+.allports {
+  background-color: $allports;
+
+  p {
+    color: lighten($allports, 50%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($allports, 20%);
+    color: darken($allports, 10%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($allports, 30%);
+    }
+  }
+}
+
+.fountain-blue {
+  background-color: $fountain-blue;
+
+  p {
+    color: darken($fountain-blue, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($fountain-blue, 20%);
+    color: darken($fountain-blue, 20%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($fountain-blue, 30%);
+    }
+  }
+}
+
+.usb-blue {
+  background-color: $usb-blue;
+
+  img {
+    padding: 100px 20px;
+
+  }
+
+  p {
+    color: darken($usb-blue, 30%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($usb-blue, 20%);
+    color: darken($usb-blue, 20%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($usb-blue, 30%);
+    }
+  }
+}
+.polaris-orange {
+  background-color: lighten($polaris-orange, 5%);
+
+  img {
+    padding: 100px 20px;
+  }
+
+  p {
+    color: lighten($polaris-orange, 40%);
+    font-family: $main-font;
+  }
+
+  a.btn {
+    background-color: lighten($polaris-orange, 20%);
+    color: darken($polaris-orange, 10%);
+    border: 1px solid $bg-gray;
+
+    &:hover {
+      background-color: lighten($polaris-orange, 30%);
+    }
+  }
+}
+
+.project-container {
+  max-width: 100%;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-out;
+  .description {
+    padding: 12px;
+  }
+
+  h3 {
+    color: white;
+    font-family: $main-font;
+  }
+
+  h5 {
+    color: $bg-gray;
+    font-family: $main-font;
+    font-size: 1em;
+    padding-top: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.1);
+    transition: box-shadow 0.2s ease-in;
+  }
+}

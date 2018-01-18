@@ -1,0 +1,12 @@
+@import "./Sass/Home.scss";
+@import "./Sass/Variables.scss";
+@import "./Sass/DesignPortfolio.scss";
+@import "./Sass/DevPortfolio.scss";
+@import "./Sass/LearnerPortfolio.scss";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-gray;
+}

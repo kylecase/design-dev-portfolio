@@ -1,0 +1,30 @@
+.design-portfolio {
+  background-color: #F8FAFC; }
+  .design-portfolio .design-nav {
+    background-color: #57D19C; }
+    .design-portfolio .design-nav nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 40px; }
+      .design-portfolio .design-nav nav a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        padding: 6px 24px; }
+      .design-portfolio .design-nav nav .selected {
+        border-radius: 30px;
+        font-weight: 500;
+        background-color: #35c084; }
+  .design-portfolio .jumbotron {
+    background-color: #57D19C;
+    min-height: 40vh;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in; }
+  .design-portfolio header {
+    font-family: "Bungee", cursive;
+    color: white; }
