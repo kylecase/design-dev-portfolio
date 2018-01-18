@@ -3,7 +3,7 @@ import React from 'react';
 
 const DesignerHome = (props) => (
     <div className="col-xs-12 col-sm-6">
-      <a href="/designer">
+      <a href={process.env.PUBLIC_URL + '/designer'}>
         <div className="designer-home home-element">
           <h2>Designer</h2>
         </div>

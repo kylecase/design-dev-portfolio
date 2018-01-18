@@ -6,9 +6,9 @@ const DevPortfolio = (props) => (
     <div className="row dev-nav">
       <div className="col-xs-3 mx-auto">
         <nav>
-          <a href="/">Home</a>
-          <a href="/designer">Designer</a>
-          <a href="/developer" className="selected">Developer</a>
+          <a href={process.env.PUBLIC_URL + '/'}>Home</a>
+          <a href={process.env.PUBLIC_URL + '/designer'}>Designer</a>
+          <a href={process.env.PUBLIC_URL + '/developer'} className="selected">Developer</a>
         </nav>
       </div>
     </div>

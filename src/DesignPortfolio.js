@@ -6,9 +6,9 @@ const DesignPortfolio = (props) => (
       <div className="row design-nav">
         <div className="col-xs-3 mx-auto">
           <nav>
-            <a href="/">Home</a>
-            <a href="/design" className="selected">Designer</a>
-            <a href="/developer">Developer</a>
+            <a href={process.env.PUBLIC_URL + '/'}>Home</a>
+            <a href={process.env.PUBLIC_URL + '/design'} className="selected">Designer</a>
+            <a href={process.env.PUBLIC_URL + '/developer'}>Developer</a>
           </nav>
         </div>
       </div>
