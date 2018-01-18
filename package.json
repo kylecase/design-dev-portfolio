@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "firebase": "^4.8.2",
+    "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -20,6 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://kylecase.github.io/design-dev-portfolio/"
 }
