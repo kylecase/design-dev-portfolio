@@ -20,9 +20,9 @@ const App = (props) => (
   <BrowserRouter>
     <div>
       <Switch>
-        <Route exact path='/' component={Home} onUpdate={fireTracking}/>
-        <Route exact path='/designer' component={DesignPortfolio} onUpdate={fireTracking}/>
-        <Route path='/developer' component={DevPortfolio} onUpdate={fireTracking}/>
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} onUpdate={fireTracking}/>
+        <Route exact path={process.env.PUBLIC_URL + '/designer'} component={DesignPortfolio} onUpdate={fireTracking}/>
+        <Route path={process.env.PUBLIC_URL + '/developer'} component={DevPortfolio} onUpdate={fireTracking}/>
       </Switch>
     </div>
   </BrowserRouter>
