@@ -25,5 +25,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://kylecase.github.io/design-dev-portfolio/"
+  "homepage": "http://kyl3cas3.com"
 }
