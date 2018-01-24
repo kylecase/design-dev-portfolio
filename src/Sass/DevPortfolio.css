@@ -27,7 +27,7 @@
     justify-content: center;
     transition: all 0.2s ease-in; }
   .dev-portfolio header {
-    font-family: "Bungee", cursive;
+    font-family: "Bungee", sans-serif;
     color: white; }
   .dev-portfolio .dev-projects {
     align-self: center; }
