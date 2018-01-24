@@ -13,7 +13,6 @@ class DevProjects extends React.Component {
   componentDidMount(){
     axios.get('https://kyle-portfolio-data.firebaseio.com/devProjects.json')
       .then(response => {
-        console.log(response.data);
         this.setState({
           projects: response.data
         });

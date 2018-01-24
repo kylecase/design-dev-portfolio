@@ -14,7 +14,6 @@ class DesignProjects extends React.Component {
   componentDidMount(){
     axios.get('https://kyle-portfolio-data.firebaseio.com/designProjects.json')
       .then(response => {
-        console.log(response.data);
         this.setState({
           projects: response.data
         });
