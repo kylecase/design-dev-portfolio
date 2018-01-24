@@ -13,7 +13,7 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-58895980-3');
 
 function fireTracking(){
-  ReactGA.pageview(window.location.hash);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 const App = (props) => (
