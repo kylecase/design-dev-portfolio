@@ -1,7 +1,8 @@
 .dev-portfolio {
   background-color: #F8FAFC; }
   .dev-portfolio .dev-nav {
-    background-color: #37373E; }
+    background-color: #37373E;
+    margin: 0; }
     .dev-portfolio .dev-nav nav {
       display: flex;
       flex-direction: row;

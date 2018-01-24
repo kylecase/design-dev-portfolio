@@ -1,7 +1,8 @@
 .design-portfolio {
   background-color: #F8FAFC; }
   .design-portfolio .design-nav {
-    background-color: #57D19C; }
+    background-color: #57D19C;
+    margin: 0; }
     .design-portfolio .design-nav nav {
       display: flex;
       flex-direction: row;

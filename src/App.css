@@ -264,7 +264,8 @@
 .design-portfolio {
   background-color: #F8FAFC; }
   .design-portfolio .design-nav {
-    background-color: #57D19C; }
+    background-color: #57D19C;
+    margin: 0; }
     .design-portfolio .design-nav nav {
       display: flex;
       flex-direction: row;
@@ -295,7 +296,8 @@
 .dev-portfolio {
   background-color: #F8FAFC; }
   .dev-portfolio .dev-nav {
-    background-color: #37373E; }
+    background-color: #37373E;
+    margin: 0; }
     .dev-portfolio .dev-nav nav {
       display: flex;
       flex-direction: row;
