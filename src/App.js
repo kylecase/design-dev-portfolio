@@ -11,6 +11,7 @@ import DevPortfolio from './DevPortfolio';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-58895980-3');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function fireTracking(){
   ReactGA.pageview(window.location.pathname + window.location.search);
