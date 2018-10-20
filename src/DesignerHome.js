@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const DesignerHome = (props) => (
     <div className="col-xs-12 col-sm-6">
-      <a href={process.env.PUBLIC_URL + '/designer'}>
+      <Link to={process.env.PUBLIC_URL + '/designer'}>
         <div className="designer-home home-element">
           <h2>Designer</h2>
         </div>
-      </a>
+      </Link>
     </div>
 )
 

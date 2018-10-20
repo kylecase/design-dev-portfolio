@@ -1,4 +1,4 @@
-@import './Variables.scss';
+@import "./Variables.scss";
 
 .home {
   h1 {
@@ -8,7 +8,7 @@
     color: $main-blue;
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (max-width: $break-md){
+    @media screen and (max-width: $break-md) {
       padding-top: 20px;
       padding-bottom: 12px;
       font-size: 2em;
@@ -45,7 +45,7 @@
     }
     h2 {
       color: $main-text;
-      @media screen and (max-width: $break-md){
+      @media screen and (max-width: $break-md) {
         padding-top: 10%;
       }
     }
@@ -112,9 +112,10 @@
       }
     }
   }
-  .designer-home, .developer-home {
+  .designer-home,
+  .developer-home {
     min-height: 400px;
-    @media screen and (max-width: $break-sm){
+    @media screen and (max-width: $break-sm) {
       min-height: 200px;
     }
   }
@@ -177,7 +178,7 @@
   }
 }
 
-.butterfly-brush{
+.butterfly-brush {
   background-color: $butterfly-brush;
 
   p {
@@ -350,7 +351,6 @@
 
   img {
     padding: 100px 20px;
-
   }
 
   p {
@@ -396,25 +396,22 @@
   padding: 24px;
   margin-bottom: 24px;
   border-radius: 8px;
+  border: 1px solid darken($border-gray, 10%);
   transition: box-shadow 0.2s ease-out;
+  background-color: white;
   .description {
     padding: 12px;
   }
 
   h3 {
-    color: white;
+    color: $bg-dark;
     font-family: $main-font;
   }
 
   h5 {
-    color: $bg-gray;
+    color: lighten($bg-dark, 30%);
     font-family: $main-font;
     font-size: 1em;
     padding-top: 0;
-  }
-
-  &:hover {
-    box-shadow: 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.1);
-    transition: box-shadow 0.2s ease-in;
   }
 }
