@@ -2,7 +2,7 @@
   font-family: "Bungee", sans-serif;
   font-weight: 500;
   font-size: 3em;
-  color: #43AEE8;
+  color: #43aee8;
   padding-top: 60px;
   padding-bottom: 60px; }
   @media screen and (max-width: 768px) {
@@ -34,7 +34,7 @@
       .home .home-element h2 {
         font-size: 1.5em; } }
   .home .home-element h2 {
-    color: #5A707D; }
+    color: #5a707d; }
     @media screen and (max-width: 768px) {
       .home .home-element h2 {
         padding-top: 10%; } }
@@ -42,150 +42,152 @@
 .home .designer-home {
   transition: background-color 0.3s ease-out, border-color 0.3s ease-in; }
   .home .designer-home:hover {
-    background-color: #57D19C;
+    background-color: #57d19c;
     border-color: #2a9868;
     transition: background-color 0.3s ease-in, border-color 0.3s ease-in; }
   @media screen and (max-width: 768px) {
     .home .designer-home {
-      background-color: #57D19C; }
+      background-color: #57d19c; }
       .home .designer-home h2 {
         color: white; } }
 
 .home .developer-home {
   transition: background-color 0.3s ease-out, border-color 0.3s ease-in; }
   .home .developer-home:hover {
-    background-color: #37373E;
+    background-color: #37373e;
     border-color: #070708;
     transition: background-color 0.3s ease-in, border-color 0.3s ease-in; }
   @media screen and (max-width: 768px) {
     .home .developer-home {
-      background-color: #37373E; }
+      background-color: #37373e; }
       .home .developer-home h2 {
         color: white; } }
 
-.home .designer-home, .home .developer-home {
+.home .designer-home,
+.home .developer-home {
   min-height: 400px; }
   @media screen and (max-width: 576px) {
-    .home .designer-home, .home .developer-home {
+    .home .designer-home,
+    .home .developer-home {
       min-height: 200px; } }
 
 .viking {
-  background-color: #51C5E1; }
+  background-color: #51c5e1; }
   .viking p {
     color: #0f4957;
     font-family: "Roboto", sans-serif; }
   .viking a.btn {
     background-color: #a8e2f0;
     color: #176e83;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .viking a.btn:hover {
       background-color: #d4f1f8; }
 
 .selective-yellow {
-  background-color: #FFB707; }
+  background-color: #ffb707; }
   .selective-yellow p {
     color: #6d4d00;
     font-family: "Roboto", sans-serif; }
   .selective-yellow a.btn {
     background-color: #ffd56d;
     color: #a07200;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .selective-yellow a.btn:hover {
       background-color: #ffe3a0; }
 
 .mulberry {
-  background-color: #C74F96; }
+  background-color: #c74f96; }
   .mulberry p {
     color: #f8eaf2;
     font-family: "Roboto", sans-serif; }
   .mulberry a.btn {
     background-color: #e09cc4;
     color: #5f1e44;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .mulberry a.btn:hover {
       background-color: #ecc3db; }
 
 .butterfly-brush {
-  background-color: #63519B; }
+  background-color: #63519b; }
   .butterfly-brush p {
     color: #d6d1e7;
     font-family: "Roboto", sans-serif; }
   .butterfly-brush a.btn {
     background-color: #9b8ec4;
     color: #231c37;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .butterfly-brush a.btn:hover {
       background-color: #b9b0d5; }
 
 .mantis {
-  background-color: #8FC350; }
+  background-color: #8fc350; }
   .mantis p {
     color: #253512;
     font-family: "Roboto", sans-serif; }
   .mantis a.btn {
     background-color: #c0dd9c;
     color: #405b1f;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .mantis a.btn:hover {
       background-color: #d8eac2; }
 
 .celestial-blue {
-  background-color: #4798CC; }
+  background-color: #4798cc; }
   .celestial-blue p {
     color: #e7f1f8;
     font-family: "Roboto", sans-serif; }
   .celestial-blue a.btn {
     background-color: #97c5e2;
     color: #1a4560;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .celestial-blue a.btn:hover {
       background-color: #bfdbed; }
 
 .pacific-blue {
-  background-color: #1AAEBC; }
+  background-color: #1aaebc; }
   .pacific-blue p {
     color: #dbf7fa;
     font-family: "Roboto", sans-serif; }
   .pacific-blue a.btn {
     background-color: #55dbe7;
     color: #073236;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .pacific-blue a.btn:hover {
       background-color: #81e4ee; }
 
 .sun {
-  background-color: #F4933A; }
+  background-color: #f4933a; }
   .sun p {
     color: #fffdfb;
     font-family: "Roboto", sans-serif; }
   .sun a.btn {
     background-color: #f9c89b;
     color: #8d4808;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .sun a.btn:hover {
       background-color: #fce2cb; }
 
 .half-baked-blue {
-  background-color: #7FC3D2; }
+  background-color: #7fc3d2; }
   .half-baked-blue p {
     color: #235762;
     font-family: "Roboto", sans-serif; }
   .half-baked-blue a.btn {
     background-color: #cae6ed;
     color: #307888;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .half-baked-blue a.btn:hover {
       background-color: #f0f8fa; }
 
 .deluge {
-  background-color: #8071AF; }
+  background-color: #8071af; }
   .deluge p {
     color: #f5f3f9;
     font-family: "Roboto", sans-serif; }
   .deluge a.btn {
     background-color: #bab2d4;
     color: #3a3156;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .deluge a.btn:hover {
       background-color: #d8d3e6; }
 
@@ -197,24 +199,24 @@
   .allports a.btn {
     background-color: #42b0cb;
     color: #194e5b;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .allports a.btn:hover {
       background-color: #6ac0d6; }
 
 .fountain-blue {
-  background-color: #68BAB6; }
+  background-color: #68bab6; }
   .fountain-blue p {
     color: #1b3b39;
     font-family: "Roboto", sans-serif; }
   .fountain-blue a.btn {
     background-color: #aedad8;
     color: #3b817e;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .fountain-blue a.btn:hover {
       background-color: #d1eae9; }
 
 .usb-blue {
-  background-color: #1FB9EA; }
+  background-color: #1fb9ea; }
   .usb-blue img {
     padding: 100px 20px; }
   .usb-blue p {
@@ -223,7 +225,7 @@
   .usb-blue a.btn {
     background-color: #7cd6f3;
     color: #0e7495;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .usb-blue a.btn:hover {
       background-color: #abe5f7; }
 
@@ -237,7 +239,7 @@
   .polaris-orange a.btn {
     background-color: #f4a07b;
     color: #c54811;
-    border: 1px solid #F8FAFC; }
+    border: 1px solid #f8fafc; }
     .polaris-orange a.btn:hover {
       background-color: #f8c2aa; }
 
@@ -246,17 +248,16 @@
   padding: 24px;
   margin-bottom: 24px;
   border-radius: 8px;
-  transition: box-shadow 0.2s ease-out; }
+  border: 1px solid #e1e1e1;
+  transition: box-shadow 0.2s ease-out;
+  background-color: white; }
   .project-container .description {
     padding: 12px; }
   .project-container h3 {
-    color: white;
+    color: #37373e;
     font-family: "Roboto", sans-serif; }
   .project-container h5 {
-    color: #F8FAFC;
+    color: #80808e;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     padding-top: 0; }
-  .project-container:hover {
-    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease-in; }

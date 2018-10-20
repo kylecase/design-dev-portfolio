@@ -1,7 +1,7 @@
 .dev-portfolio {
-  background-color: #F8FAFC; }
+  background-color: #f8fafc; }
   .dev-portfolio .dev-nav {
-    background-color: #37373E;
+    background-color: #37373e;
     margin: 0; }
     .dev-portfolio .dev-nav nav {
       display: flex;
@@ -18,7 +18,7 @@
         font-weight: 500;
         background-color: #4f4f59; }
   .dev-portfolio .jumbotron {
-    background-color: #37373E;
+    background-color: #37373e;
     min-height: 40vh;
     border-radius: 0px;
     display: flex;

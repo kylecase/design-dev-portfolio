@@ -1,7 +1,7 @@
 .design-portfolio {
-  background-color: #F8FAFC; }
+  background-color: #f8fafc; }
   .design-portfolio .design-nav {
-    background-color: #57D19C;
+    background-color: #57d19c;
     margin: 0; }
     .design-portfolio .design-nav nav {
       display: flex;
@@ -18,7 +18,7 @@
         font-weight: 500;
         background-color: #35c084; }
   .design-portfolio .jumbotron {
-    background-color: #57D19C;
+    background-color: #57d19c;
     min-height: 40vh;
     border-radius: 0px;
     display: flex;
