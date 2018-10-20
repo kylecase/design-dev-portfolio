@@ -1,14 +1,17 @@
-import React from 'react';
-import DevProjects from './DevProjects';
+import React from "react";
+import DevProjects from "./DevProjects";
+import { Link } from "react-router-dom";
 
-const DevPortfolio = (props) => (
+const DevPortfolio = props => (
   <div className="dev-portfolio">
     <div className="row dev-nav">
       <div className="col-xs-3 mx-auto">
         <nav>
-          <a href={process.env.PUBLIC_URL + '/'}>Home</a>
-          <a href={process.env.PUBLIC_URL + '/designer'}>Designer</a>
-          <a href={process.env.PUBLIC_URL + '/developer'} className="selected">Developer</a>
+          <Link to={process.env.PUBLIC_URL + "/"}>Home</Link>
+          <Link to={process.env.PUBLIC_URL + "/designer"}>Designer</Link>
+          <Link to={process.env.PUBLIC_URL + "/developer"} className="selected">
+            Developer
+          </Link>
         </nav>
       </div>
     </div>
@@ -25,6 +28,6 @@ const DevPortfolio = (props) => (
       <DevProjects />
     </div>
   </div>
-)
+);
 
 export default DevPortfolio;

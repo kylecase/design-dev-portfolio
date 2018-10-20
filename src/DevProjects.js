@@ -24,20 +24,20 @@ class DevProjects extends React.Component {
   }
 
   render() {
-    const colors = [
-      "butterfly-brush",
-      "celestial-blue",
-      "selective-yellow",
-      "mantis",
-      "viking",
-      "sun",
-      "mulberry",
-      "pacific-blue",
-      "deluge",
-      "half-baked-blue",
-      "allports",
-      "fountain-blue"
-    ];
+    // const colors = [
+    //   "butterfly-brush",
+    //   "celestial-blue",
+    //   "selective-yellow",
+    //   "mantis",
+    //   "viking",
+    //   "sun",
+    //   "mulberry",
+    //   "pacific-blue",
+    //   "deluge",
+    //   "half-baked-blue",
+    //   "allports",
+    //   "fountain-blue"
+    // ];
     const projects = this.state.projects.map((project, index) => {
       return (
         <DevProject
