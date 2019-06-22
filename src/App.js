@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Home from "./Home";
+import DesignPortfolio from "./DesignPortfolio";
+import DevPortfolio from "./DevPortfolio";
+import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ReactGA.initialize("UA-58895980-3");
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+function fireTracking() {
+  ReactGA.pageview(window.location.pathname + window.location.search);
 }
+
+const App = props => (
+  <BrowserRouter>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Kyle Case | Developer + Designer | Minneapolis, MN</title>
+    </Helmet>
+    <Switch>
+      <Route
+        exact
+        path={process.env.PUBLIC_URL + "/"}
+        component={Home}
+        onUpdate={fireTracking}
+      />
+      <Route
+        exact
+        path={process.env.PUBLIC_URL + "/designer"}
+        component={DesignPortfolio}
+        onUpdate={fireTracking}
+      />
+      <Route
+        path={process.env.PUBLIC_URL + "/developer"}
+        component={DevPortfolio}
+        onUpdate={fireTracking}
+      />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
