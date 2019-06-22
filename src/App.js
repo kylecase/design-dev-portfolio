@@ -15,25 +15,20 @@ function fireTracking() {
 }
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Helmet>
       <meta charSet="utf-8" />
       <title>Kyle Case | Developer + Designer | Minneapolis, MN</title>
     </Helmet>
     <Switch>
+      <Route exact basename path="/" component={Home} onUpdate={fireTracking} />
       <Route
-        exact
-        path={process.env.PUBLIC_URL + "/"}
-        component={Home}
-        onUpdate={fireTracking}
-      />
-      <Route
-        path={process.env.PUBLIC_URL + "/designer"}
+        path="/designer"
         component={DesignPortfolio}
         onUpdate={fireTracking}
       />
       <Route
-        path={process.env.PUBLIC_URL + "/developer"}
+        path="/developer"
         component={DevPortfolio}
         onUpdate={fireTracking}
       />
