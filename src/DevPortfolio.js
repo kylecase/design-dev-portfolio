@@ -1,12 +1,12 @@
 import React from "react";
 import DevProjects from "./DevProjects";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Jumbotron, Nav } from "reactstrap";
+import { Container, Row, Col, Jumbotron } from "reactstrap";
 
 const DevPortfolio = () => (
   <div className="dev-portfolio">
     <Row className="dev-nav">
-      <Col xs="3" className="mx-auto">
+      <Col xs="12" md="3" className="mx-auto">
         <nav>
           <Link to={process.env.PUBLIC_URL + "/"}>Home</Link>
           <Link to={process.env.PUBLIC_URL + "/designer"}>Designer</Link>
