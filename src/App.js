@@ -14,7 +14,7 @@ function fireTracking() {
   ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
-const App = props => (
+const App = () => (
   <BrowserRouter>
     <Helmet>
       <meta charSet="utf-8" />
@@ -28,7 +28,6 @@ const App = props => (
         onUpdate={fireTracking}
       />
       <Route
-        exact
         path={process.env.PUBLIC_URL + "/designer"}
         component={DesignPortfolio}
         onUpdate={fireTracking}
