@@ -3,6 +3,7 @@ import axios from "axios";
 import Project from "./Project";
 import ConsultingProjects from "./ConsultingProjects";
 import { Row, Col } from "reactstrap";
+import { motion } from "framer-motion";
 
 class DesignProjects extends React.Component {
   constructor(props) {
@@ -35,29 +36,43 @@ class DesignProjects extends React.Component {
 
   render() {
     const consultingProjects = ConsultingProjects.map((project, index) => {
+      const delay = 0.6 + 0.3 * index;
       return (
-        <Project
-          name={project.name}
-          slug={project.slug}
-          image={project.image}
-          company={project.company}
-          description={project.description}
-          key={index}
-          consulting={true}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: "16px" }}
+          animate={{ opacity: 1, y: "0px" }}
+          transition={{ ease: "easeIn", duration: 0.3, delay: delay }}
+        >
+          <Project
+            name={project.name}
+            slug={project.slug}
+            image={project.image}
+            company={project.company}
+            description={project.description}
+            key={index}
+            consulting={true}
+          />
+        </motion.div>
       );
     });
     const projects = this.state.projects.map((project, index) => {
+      const delay = 0.6 + 0.3 * index;
       return (
-        <Project
-          key={index}
-          project={project}
-          name={project.name}
-          slug={project.slug}
-          image={project.image}
-          company={project.company}
-          description={project.description}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: "16px" }}
+          animate={{ opacity: 1, y: "0px" }}
+          transition={{ ease: "easeIn", duration: 0.3, delay: delay }}
+        >
+          <Project
+            key={index}
+            project={project}
+            name={project.name}
+            slug={project.slug}
+            image={project.image}
+            company={project.company}
+            description={project.description}
+          />
+        </motion.div>
       );
     });
 

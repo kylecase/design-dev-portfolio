@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Project from "./Project";
 import { Row, Col } from "reactstrap";
+import { motion } from "framer-motion";
 
 class DevProjects extends React.Component {
   constructor(props) {
@@ -34,15 +35,23 @@ class DevProjects extends React.Component {
 
   render() {
     const projects = this.state.projects.map((project, index) => {
+      const delay = 0.6 + 0.3 * index;
+
       return (
-        <Project
-          key={index}
-          name={project.name}
-          slug={project.slug}
-          image={project.image}
-          company={project.company}
-          description={project.description}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: "16px" }}
+          animate={{ opacity: 1, y: "0px" }}
+          transition={{ ease: "easeIn", duration: 0.3, delay: delay }}
+        >
+          <Project
+            key={index}
+            name={project.name}
+            slug={project.slug}
+            image={project.image}
+            company={project.company}
+            description={project.description}
+          />
+        </motion.div>
       );
     });
 

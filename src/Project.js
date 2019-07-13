@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Row, Col, Modal, ModalHeader } from "reactstrap";
+import { motion } from "framer-motion";
 
 class Project extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class Project extends Component {
             className={`dev-project-image img-fluid ${slug}`}
             src={image.sm}
             alt={`${name}`}
+            style={{ maxHeight: "350px" }}
           />
         );
       } else if (windowSize < 768) {
@@ -35,6 +37,7 @@ class Project extends Component {
             className={`dev-project-image img-fluid ${slug}`}
             src={image.lg}
             alt={`${name}`}
+            style={{ maxHeight: "350px" }}
           />
         );
       } else {
@@ -43,6 +46,7 @@ class Project extends Component {
             className={`dev-project-image img-fluid ${slug}`}
             src={image.hd}
             alt={`${name}`}
+            style={{ maxHeight: "350px" }}
           />
         );
       }
@@ -50,9 +54,16 @@ class Project extends Component {
       img = <p>No image available</p>;
     }
     return (
-      <div className="project-container">
+      <motion.div
+        whileHover={{
+          boxShadow: "0 3px 10px rgba(0, 0, 0, 0.3)",
+          scale: 1.02
+        }}
+        transition={{ duration: 0.3, ease: "easeIn" }}
+        className="project-container"
+      >
         <Row className="align-items-center">
-          <Col sm="12" md="6">
+          <Col sm="12" md={{ size: 5, offset: 1 }}>
             {consulting ? (
               <Fragment>{img}</Fragment>
             ) : (
@@ -71,7 +82,7 @@ class Project extends Component {
           <ModalHeader toggle={this.toggleModal}>{name}</ModalHeader>
           <img className="img-fluid" src={image.lg} alt={`${name}`} />
         </Modal>
-      </div>
+      </motion.div>
     );
   }
 }
