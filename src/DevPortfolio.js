@@ -2,6 +2,7 @@ import React from "react";
 import DevProjects from "./DevProjects";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Jumbotron } from "reactstrap";
+import { motion } from "framer-motion";
 
 const DevPortfolio = () => (
   <div className="dev-portfolio">
@@ -20,7 +21,14 @@ const DevPortfolio = () => (
       <Row>
         <Col xs="12">
           <header>
-            <h1 className="text-center designer">Developer</h1>
+            <motion.h1
+              className="text-center designer"
+              transition={{ ease: "easeIn", duration: 0.3 }}
+              initial={{ opacity: 0, y: "16px" }}
+              animate={{ opacity: 1, y: "0px" }}
+            >
+              Developer
+            </motion.h1>
           </header>
         </Col>
       </Row>

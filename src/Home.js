@@ -2,6 +2,8 @@ import React from "react";
 import DesignerHome from "./DesignerHome";
 import DeveloperHome from "./DeveloperHome";
 import { Container, Row, Col } from "reactstrap";
+import { motion } from "framer-motion";
+
 const Home = () => (
   <Container className="home">
     <Row>
@@ -15,7 +17,11 @@ const Home = () => (
     </Row>
     <Row>
       <Col sm="12">
-        <h1 className="text-center">MINNEAPOLIS, MINNESOTA</h1>
+        <motion.h1 className="text-center"
+         transition={{ ease: "easeIn", duration: 0.3, delay: 0.9 }}
+        initial={{opacity: 0, y: '16px'}} 
+        animate={{opacity: 1, y: '0px'}}
+        >MINNEAPOLIS, MINNESOTA</motion.h1>
       </Col>
     </Row>
   </Container>
