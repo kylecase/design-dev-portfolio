@@ -42,6 +42,7 @@ class DesignProjects extends React.Component {
           initial={{ opacity: 0, y: "16px" }}
           animate={{ opacity: 1, y: "0px" }}
           transition={{ ease: "easeIn", duration: 0.3, delay: delay }}
+          key={index}
         >
           <Project
             name={project.name}
@@ -49,7 +50,6 @@ class DesignProjects extends React.Component {
             image={project.image}
             company={project.company}
             description={project.description}
-            key={index}
             consulting={true}
           />
         </motion.div>
@@ -62,9 +62,9 @@ class DesignProjects extends React.Component {
           initial={{ opacity: 0, y: "16px" }}
           animate={{ opacity: 1, y: "0px" }}
           transition={{ ease: "easeIn", duration: 0.3, delay: delay }}
+          key={index}
         >
           <Project
-            key={index}
             project={project}
             name={project.name}
             slug={project.slug}

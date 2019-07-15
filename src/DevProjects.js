@@ -42,9 +42,9 @@ class DevProjects extends React.Component {
           initial={{ opacity: 0, y: "16px" }}
           animate={{ opacity: 1, y: "0px" }}
           transition={{ ease: "easeIn", duration: 0.3, delay: delay }}
+          key={index}
         >
           <Project
-            key={index}
             name={project.name}
             slug={project.slug}
             image={project.image}
